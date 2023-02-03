@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
-
+function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) =>
+          encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
 
 const ContactForm = (props)=>{
     const [success, setSuccess] = useState(false);
