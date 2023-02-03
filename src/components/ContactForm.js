@@ -129,7 +129,7 @@ const ContactForm = (props)=>{
                         <span className='text-red-600 text-sm'>{errors.message && touched.message && errors.message}</span>
                     </div>
                     
-                    {success ? <span className='text-green-500 text-sm'>We appreciate you contacting us. One of our colleagues will get back in touch with you soon!Have a great day!</span> : null}
+                    {success ? <span className='text-green-500 text-sm'>We appreciate you contacting us. One of our experts will get back in touch with you soon! Have a great day!</span> : null}
                     {error ? <span className='text-red-600 text-sm'>An unexpected error has occured. Please contact us using phone or email. Thank you.</span> : null}
                     <button type="submit" disabled={isSubmitting} className="btn-primary mt-6">
                         Submit
