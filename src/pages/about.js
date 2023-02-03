@@ -59,7 +59,7 @@ export default function Showcase(props){
                         </Animate>
                         <Animate delay={0.5}>
                             <p>
-                                We invite you to browse our portfolio and see for yourself the quality of our work. If you have a construction project in mind, please don't hesitate to contact us. We would be happy to provide a free consultation and quote.
+                                We invite you to browse our portfolio and see for yourself the quality of our work. If you have a construction project in mind, please don&apos;t hesitate to contact us. We would be happy to provide a free consultation and quote.
                             </p>
                         </Animate>
                     </div>
@@ -85,13 +85,13 @@ export default function Showcase(props){
                         At Construct, we understand that every construction project is unique, and we strive to provide a personalized experience for each and every client. Our work process begins with a consultation, where we listen to your vision and requirements, and provide expert guidance and support to help bring your vision to life.</p>
                         </Animate>
                         <Animate delay={0.3}>
-                        <p>Next, we'll create a detailed plan and timeline for your project, taking into account all necessary permits, materials, and equipment. Our team of experienced professionals will handle every aspect of your project with expertise, ensuring that every detail is carefully planned and executed. We'll keep you informed and involved every step of the way, ensuring that your project is completed on time and within budget.</p>
+                        <p>Next, we&apos;ll create a detailed plan and timeline for your project, taking into account all necessary permits, materials, and equipment. Our team of experienced professionals will handle every aspect of your project with expertise, ensuring that every detail is carefully planned and executed. We&apos;ll keep you informed and involved every step of the way, ensuring that your project is completed on time and within budget.</p>
                         </Animate>
                         <Animate delay={0.4}>
-                        <p>At Construct, we prioritize quality and safety, and our team takes all necessary precautions to protect your property and maintain a clean and safe worksite. We understand that a construction project can be disruptive, and we'll do everything in our power to minimize any inconvenience to you and your family.</p>
+                        <p>At Construct, we prioritize quality and safety, and our team takes all necessary precautions to protect your property and maintain a clean and safe worksite. We understand that a construction project can be disruptive, and we&apos;ll do everything in our power to minimize any inconvenience to you and your family.</p>
                         </Animate>
                         <Animate delay={0.5}>
-                        <p>Finally, upon completion, we'll conduct a thorough inspection of your project, ensuring that everything has been completed to the highest standards. Our commitment to quality and customer satisfaction is reflected in the exceptional results we deliver.</p>
+                        <p>Finally, upon completion, we&apos;ll conduct a thorough inspection of your project, ensuring that everything has been completed to the highest standards. Our commitment to quality and customer satisfaction is reflected in the exceptional results we deliver.</p>
                         </Animate>
                     </div>
                 </article>

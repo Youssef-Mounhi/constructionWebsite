@@ -35,7 +35,7 @@ export default function Home() {
               <div className="col-span-6 md:col-end-7 md:col-span-2 text-white">
                 <Animate delay={0.4}>
                   <p>
-                    Achieve capital efficiency with Idle's products: as a leading DeFi yield aggregator, Idle offers first-rate yield optimization and risk tranching strategies. Get the best yield by using, integrating or building on top of Idle’s products. Money should never sit still.
+                    Achieve capital efficiency with Idle&apos;s products: as a leading DeFi yield aggregator, Idle offers first-rate yield optimization and risk tranching strategies. Get the best yield by using, integrating or building on top of Idle’s products. Money should never sit still.
                   </p>
                 </Animate>
               </div>
@@ -110,7 +110,7 @@ export default function Home() {
                   <span className="absolute inset-0 border-2 border-dashed border-primary"></span>
                   <div className="h-full bg-secondary border-2 border-primary p-6 text-white grid justify-start gap-4 group-hover:shadow-lg transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                     <h3 className="text-2xl font-serif text-primary">Renovation and Remodeling</h3>
-                    <p>We provide renovation and remodeling services for both residential and commercial properties. Whether you're looking to update your home or remodel your commercial space, we'll work with you to create the perfect design and bring your vision to life.</p>
+                    <p>We provide renovation and remodeling services for both residential and commercial properties. Whether you&apos;re looking to update your home or remodel your commercial space, we&apos;ll work with you to create the perfect design and bring your vision to life.</p>
                     <Link href={"/services"} className="btn-primary mt-6 self-end">
                       Learn more
                     </Link>
@@ -126,7 +126,7 @@ export default function Home() {
             <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-8 place-items-center'>
               <div className='relative z-10 h-64 sm:h-80 lg:h-full'>
                 <Animate>
-                  <Image src="/house.avif" width={1080} height={760}
+                  <Image src="/house.avif" alt="Cool House" width={1080} height={760}
                     className="h-64 sm:h-80 lg:h-full object-cover"
                   />
                 </Animate>

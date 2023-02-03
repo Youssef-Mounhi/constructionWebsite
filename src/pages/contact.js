@@ -22,7 +22,7 @@ export default function Showcase(props){
                                     </Animate>
                                     <div className="flex flex-col gap-3">
                                         <Animate delay={0.2}>
-                                            <a  href="https://goo.gl/maps/Sf1nKFQXecY4jj1AA" target="_blank"
+                                            <a  href="https://goo.gl/maps/Sf1nKFQXecY4jj1AA" target="_blank" rel="noreferrer"
                                                 className="flex gap-2 text-white items-center transition hover:text-primary">
                                                 <MapPinIcon className="w-6 h-6"/>
                                                 10 Maple St, Springfield, IL 62704

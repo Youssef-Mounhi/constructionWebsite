@@ -18,7 +18,7 @@ const CTA = ()=>{
                     <h2 className='section-heading'>Transform Your Vision into Reality</h2>
                     </Animate>
                     <Animate delay={0.1}>
-                    <p className='text-white'>Our experienced construction team is ready to turn your vision into a reality. We understand that building a new home or commercial space can be an exciting but daunting process. That's why we offer a free consultation to discuss your needs and provide personalized solutions that fit your budget and timeline.</p>
+                    <p className='text-white'>Our experienced construction team is ready to turn your vision into a reality. We understand that building a new home or commercial space can be an exciting but daunting process. That&apos;s why we offer a free consultation to discuss your needs and provide personalized solutions that fit your budget and timeline.</p>
                     </Animate>
                 </div>
                 <Animate delay={0.2}>
