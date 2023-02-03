@@ -69,7 +69,7 @@ const Testimonial = () => {
             <SwiperSlide className='bg-gray-900/60'>
                 <div className='grid grid-cols-3 lg:min-h-[75vh]'>
                     <div className='col-span-3 lg:col-span-1 max-h-72 md:max-h-full'>
-                        <Image src="/house.avif" width={480} height={620} className="h-full w-full object-cover"/>
+                        <Image src="/house.jpg" width={480} height={620} className="h-full w-full object-cover"/>
                     </div>
                     <div className='col-span-3 lg:col-span-2 text-white p-4 md:p-8 flex flex-col justify-between gap-12'>
                         <div className='-space-y-3'>

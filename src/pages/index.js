@@ -126,7 +126,7 @@ export default function Home() {
             <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-8 place-items-center'>
               <div className='relative z-10 h-64 sm:h-80 lg:h-full'>
                 <Animate>
-                  <Image src="/house.avif" alt="Cool House" width={1080} height={760}
+                  <Image src="/house.jpg" alt="Cool House" width={1080} height={760}
                     className="h-64 sm:h-80 lg:h-full object-cover"
                   />
                 </Animate>

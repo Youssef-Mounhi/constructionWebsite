@@ -27,7 +27,7 @@ function Workcase({title}){
         <>
             <div className="relative h-96 group cursor-pointer" onClick={()=>setOpen(true)}>
                 <div className="absolute inset-0 h-full w-full">
-                    <Image src="/house.avif" width={720} height={720}
+                    <Image src="/house.jpg" width={720} height={720}
                         className="object-cover h-full w-full"
                     />
                     <div className="absolute top-0 left-0 p-4 bg-primary text-white font-bold tracking-wide">
