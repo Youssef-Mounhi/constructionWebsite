@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
 
 
 const ContactForm = (props)=>{
+    const [success, setSuccess] = useState(false);
 
     const styles = {
         field : "rounded-sm border-gray-300 transition focus:shadow-md focus:border-primary focus:ring-primary sm:text-sm",
@@ -27,10 +28,20 @@ const ContactForm = (props)=>{
             initialValues={{ firstname: '', lastname: '', email: '', phone: '', message: '' }}
             validationSchema={ContactSchema}
             onSubmit={(values, { setSubmitting }) => {
-                setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                setSubmitting(false);
-                }, 400);
+                setSubmitting(true);
+                console.log(values)
+                fetch("/contact",{
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: encode({
+                        "form-name": "contact",
+                        ...values,
+                        }),
+                })
+                .then(()=>{
+                    setSubmitting(false);
+                })
+                .catch(err=>console.log(err));
             }}
         >
             {({
@@ -41,9 +52,10 @@ const ContactForm = (props)=>{
                 handleSubmit,
                 isSubmitting,
             }) => (
-                <form onSubmit={handleSubmit} 
+                <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true"
                     className="flex flex-col gap-4 text-gray-700"
                 >
+                    <input type="hidden" name="contact" value="contact" />
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <div className='flex flex-col gap-0.5'>
                             <label htmlFor='firstname' className={styles.label}>First name</label>
@@ -107,6 +119,8 @@ const ContactForm = (props)=>{
                         />
                         <span className='text-red-600 text-sm'>{errors.message && touched.message && errors.message}</span>
                     </div>
+                    
+                    {success ? <span className='text-green-500 text-sm'>We appreciate you contacting us. One of our colleagues will get back in touch with you soon!Have a great day!</span> : null}
                     <button type="submit" disabled={isSubmitting} className="btn-primary mt-6">
                         Submit
                     </button>
